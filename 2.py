@@ -4,7 +4,7 @@
 
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
-num = int(input())
+num = int(input("Введите целое положительной число."))
 count = 1
 comp = 1
 result = []
@@ -13,4 +13,4 @@ while count <= num:
     result.append(comp)
     count = count + 1
 
-print(result)
+print(f"Произведение чисел от 1 до {num}: {result}")

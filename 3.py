@@ -14,9 +14,9 @@ while i <= num:
     list.append(round(result, 2))
     i = i + 1
 
-print(f"{list}")
+print(f"Последовательность: {list}")
 result = 0
 for _ in range (len(list)):
     result = result + list[_]
 
-print(f"Сумма:{result}")
+print(f"Сумма элементоа последовательности:{result}")

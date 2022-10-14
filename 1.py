@@ -6,9 +6,9 @@
 # - 0,56 -> 11
 
 
-num = input()
+num = input("Введите вещественное число:")
 result = 0
 for i in range (len(num)):
     if num[i].isdigit():
         result = result + int(num[i])
-print(result)
+print(f"Сумма чисел введённого числа: {result}")
