@@ -4,13 +4,16 @@
 
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
-num = int(input("Введите целое положительной число."))
-count = 1
-comp = 1
-result = []
-while count <= num:
-    comp = comp * count
-    result.append(comp)
-    count = count + 1
+num = int(input("Введите целое положительной число: "))
 
-print(f"Произведение чисел от 1 до {num}: {result}")
+def find_factorial (number):
+    comp = 1
+    count = 1
+    result = []
+    while count <= number:
+        comp = comp * count
+        result.append(comp)
+        count = count + 1
+    return result
+
+print(f"Произведение чисел от 1 до {num}: {find_factorial(num)}")
